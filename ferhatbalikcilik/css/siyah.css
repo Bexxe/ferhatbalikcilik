@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+.nav-sm{
+    display: none;
+}
+.nav-lg .navbar{
+    background-color: transparent;
+
+    z-index: 1;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.23);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.9px);
+-webkit-backdrop-filter: blur(6.9px);
+border: 1px solid rgba(255, 255, 255, 0.33);
+}
+.navbar-brand img{
+    width: 100px;
+}
+.background img{
+width: 100%;
+height: 100vh;
+}
+.nav-link input[type='text']{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    outline-color: rgb(4, 60, 145);
+    font-family: 'Manrope', sans-serif;
+}
+.nav-link i{
+position: relative;
+top: 10px;
+right: 60px;
+}
+.login-box button{
+    background-color: rgba(255, 255, 255, 0.658);;
+    padding: 15px;
+    position: relative;
+    top: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: rgb(4, 60, 145);
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    border: none;
+    transition: 500ms;
+}
+.login-box button:hover {
+    background-color: rgba(255, 255, 255, 0.37);
+    transition: 500ms;
+}
+@media only screen and (max-width: 991px) {
+    .nav-sm{
+        display: inline;
+    }
+    .nav-lg{
+        display: none;
+    }
+  }
+  /* küçük navbar */
+.nav-sm .navbar{
+    background-color: transparent;
+  z-index: 1;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.23);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.9px);
+-webkit-backdrop-filter: blur(6.9px);
+border: 1px solid rgba(255, 255, 255, 0.33);
+}
+.login-box-sm{
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: rgb(4, 60, 145);
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    transition: 500ms;
+    font-size: 15px;
+}
+.offcanvas-title a{
+    text-decoration: none;
+}
+.txt-ara input[type='text']{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    outline-color: rgb(4, 60, 145);
+    font-family: 'Manrope', sans-serif;
+}
+
+.txt-ara i{
+    position: absolute;
+    right: 25px;
+    bottom: 23px;
+    font-size: 14px;
+}
+
+
+
+/*card slider  */
+
+
+
+
+.beyaz-img img{
+    width: 90%;
+    position: relative;
+    bottom: 120%;
+    animation: sinif-animasyon 2s alternate forwards;
+    cursor: pointer;
+}
+.siyah-img img{
+    width: 90%;
+        position: relative;
+        bottom: 120%;
+        animation: sinif-animasyon-active 2s alternate forwards;
+        cursor: pointer;
+}
+.pullu-img img{
+    width: 90%;
+    position: relative;
+    bottom: 120%;
+    animation: sinif-animasyon 2s alternate forwards;
+    cursor: pointer;
+}
+.pulsuz-img img{
+    width: 90%;
+    position: relative;
+    bottom: 120%;
+    animation: sinif-animasyon 2s alternate forwards;
+    cursor: pointer;
+}
+
+@keyframes sinif-animasyon{
+ 0%{
+    bottom: 120%;
+ }
+ 100%{
+    bottom: 60%;
+ }
+}
+@keyframes sinif-animasyon-active{
+    0%{
+       bottom: 120%;
+    }
+    100%{
+       bottom: 40%;
+    }
+   }
+   @keyframes sinif-animasyon-ters{
+    0%{
+       bottom: 40%;
+    }
+    100%{
+       bottom: 60%;
+    }
+   }
+
+   /* section*/
+
+
+
+   .card{
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0.692);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.9px);
+-webkit-backdrop-filter: blur(6.9px);
+border: 1px solid rgba(255, 255, 255, 0.33);    
+   }
+
+.card img{
+    padding-bottom: 10%; 
+    padding-top: 10%;   
+}
+.siparis-btn{
+    background-color: rgb(4, 60, 145);
+    font-family: 'Manrope', sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 5px;
+}
+.card a{
+    text-decoration: none;
+}
+.tur{
+    color: black;
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+}
+.fiyat{
+    color: rgb(4, 60, 145);
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+}
+.siniflandirma-sm{
+    display: none;
+}
+@media only screen and (max-width: 767px) {
+.siniflandirma-lg{
+    display: none;
+}
+.siniflandirma-sm{
+    display:flex;
+    width: 100%;
+}
+.beyaz-img img{
+    width: 125%;
+    position: relative;
+    bottom: 120%;
+    animation: sinif-animasyon 2s alternate forwards;
+    cursor: pointer;
+}
+.siyah-img img{
+    width: 125%;
+        position: relative;
+        bottom: 120%;
+        animation: sinif-animasyon-active 2s alternate forwards;
+        cursor: pointer;
+}
+.pullu-img img{
+    width: 125%;
+
+    position: relative;
+    bottom: 120%;
+    animation: sinif-animasyon 2s alternate forwards;
+    cursor: pointer;
+}
+.pulsuz-img img{
+    width: 125%;
+
+    position: relative;
+    bottom: 120%;
+    animation: sinif-animasyon 2s alternate forwards;
+    cursor: pointer;
+}
+.siparis-btn{
+    background-color: rgb(4, 60, 145);
+    font-family: 'Manrope', sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
+}
+.baliklar-container{
+    position: relative;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth; /* Animasyon eklemek için */
+}
+.baliklar-container-2{
+    position: relative;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth; /* Animasyon eklemek için */
+}
+.card-sm-slider{
+    display: flex;
+}
+.card-lg-slider{
+    display: none;
+}
+.navbar-brand img{
+    width: 100px;
+}
+.navbar-brand a{
+    width: 100px;
+    text-decoration: none;
+}
+  }
+
+  @media only screen and (min-width: 768px) {
+
+    .card-sm-slider{
+        display: none;
+    }
+    .card-lg-slider{
+        display: inline;
+    }
+    .baliklar-container {
+        position: relative;
+        overflow-x: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+                scroll-behavior: smooth; /* Animasyon eklemek için */
+    }
+    
+  }
+
+  /**/
+  ::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+    opacity: 0
+}
+.balik-box {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 -10px; /* İçerideki kartlar arasında ek bir boşluk bırakır */
+}
+
+.card {
+ /* Kartların sabit bir genişliği olması için */
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.next button{
+    position: relative;
+    top: 45%;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+
+    background: rgba(255, 255, 255, 0.692);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(255, 255, 255, 0.33);    
+
+}
+
+.baslik{
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+}
+.footer{
+    background-color: rgb(37, 37, 37);
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.box{
+    margin: 10px;
+}
+.footer-baslik a{
+color: white;
+font-size: 30px;
+text-decoration: none;
+font-family: 'Manrope', sans-serif;
+}
+.harita iframe{
+    width: 100%;
+    height: 300px;
+}
+.footer-alt-baslik a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+.footer-alt-baslik{
+    margin-top: 20px;
+}
